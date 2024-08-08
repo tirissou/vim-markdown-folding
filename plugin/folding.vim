@@ -153,9 +153,9 @@ let &l:foldexpr =
   \ : 'StackedMarkdownFolds()'
 
 " Teardown {{{1
-if !exists("b:undo_ftplugin") | let b:undo_ftplugin = '' | endif
-let b:undo_ftplugin .= '
-  \ | setlocal foldmethod< foldtext< foldexpr<
-  \ | delcommand FoldToggle
-  \ '
+" if !exists("b:undo_ftplugin") | let b:undo_ftplugin = '' | endif
+" let b:undo_ftplugin .= '
+"   \ | setlocal foldmethod< foldtext< foldexpr<
+"   \ | delcommand FoldToggle
+"   \ '
 " vim:set fdm=marker:
